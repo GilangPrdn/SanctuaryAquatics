@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanctuary Aquactics</title>
+<link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
+<link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/easy-responsive-shortcodes.css' type='text/css' media='all'/>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+</head>
+<body class="home page page-template page-template-template-portfolio page-template-template-portfolio-php">
+<div id="page">
+	<div class="container">
+		<header id="masthead" class="site-header">
+		<div class="site-branding">
+			<a href="index.html">
+				<img src="photo/logo-sanctuary-aquatics.png" alt="Sanctuary Aquatics Logo" style="width: 16%; height: auto;">
+			</a>
+		</div>
+		<nav id="site-navigation" class="main-navigation">
+		<button class="menu-toggle">Menu</button>
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+		<div class="menu-menu-1-container">
+			<ul id="menu-menu-1" class="menu">
+				<li><a href="index.html">Home</a></li>
+				<!-- <li><a href="about.html">About</a></li> -->
+				<li><a href="shop.html">Shop</a></li>
+				<!-- <li><a href="blog.html">Blog</a></li>
+				<li><a href="elements.html">Elements</a></li>
+				<li><a href="#">Pages</a>
+				<ul class="sub-menu">
+					<li><a href="portfolio-item.html">Portfolio Item</a></li>
+					<li><a href="blog-single.html">Blog Article</a></li>
+					<li><a href="shop-single.html">Shop Item</a></li>
+					<li><a href="portfolio-category.html">Portfolio Category</a></li>
+				</ul>
+				</li> -->
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		</nav>
+		</header>
+		<!-- #masthead -->
+		<div id="content" class="site-content">
+			<div id="primary" class="content-area column full">
+				<main id="main" class="site-main">
+				<article id="post-39" class="post-39 page type-page status-publish hentry">
+				<header class="entry-header">
+				<h1 class="entry-title">Cara Hubungi </h1>
+				</header>
+				<!-- .entry-header -->
+				<div class="entry-content">
+						
+					<!-- BEGIN MAP -->
+					<div style='overflow:hidden;height:380px;width:100%;'>
+						<div id='gmap_canvas' style='height:380px;width:100%;'></div>
+						<div></div>
+					</div>
+				
+					<script type='text/javascript'>
+						function init_map(){
+							var myOptions = {
+								zoom: 15,
+								center: new google.maps.LatLng(-6.4219111, 106.7357226), // Koordinat Jl. Ps. Parung No.1-20 Blok B
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+							};
+							var map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+							var marker = new google.maps.Marker({
+								map: map,
+								position: new google.maps.LatLng(-6.4219111, 106.7357226)
+							});
+							var infowindow = new google.maps.InfoWindow({
+								content: '<strong>Lokasi Alamat</strong><br />Jl. Ps. Parung No.1-20 Blok B<br />Kabupaten Bogor, Jawa Barat'
+							});
+							google.maps.event.addListener(marker, 'click', function(){
+								infowindow.open(map, marker);
+							});
+							infowindow.open(map, marker);
+						}
+						google.maps.event.addDomListener(window, 'load', init_map);
+					</script>
+					<!-- END MAP -->
+						
+					<div class="wpcmsdev-columns">
+						<div class="column column-width-one-half">
+							<h4>Hubungi Kita:</h4>						
+							
+							<form class="wpcf7" method="post" action="contact.php" id="contactform">
+								<div class="form">
+									<p><input type="text" name="name" placeholder="Nama *"></p>
+									<p><input type="text" name="email" placeholder="Alamat E-Mail *"></p>
+									<p><textarea name="comment" rows="3" placeholder="Pesan *"></textarea></p>
+									<input type="submit" id="submit" class="clearfix btn" value="Kirim">
+								</div>
+							</form>
+							<div class="done">								
+								Your message has been sent. Thank you!
+							</div>
+							
+						</div>
+						<div class="column column-width-one-half">
+							<h4>Hubungi: 0857-7945-2131</h4>
+							<p>
+								Sanctuary Aquatics adalah toko yang menyediakan berbagai macam ikan hias berkualitas tinggi untuk para pecinta aquascape dan penghobi akuarium.
+								<br> 
+								Berlokasi di Jl. Ps. Parung No.1-20 Blok B, Waru, Kec. Parung, Kabupaten Bogor, kami menawarkan koleksi ikan hias yang unik dan menarik, mulai dari ikan air tawar yang eksotis hingga ikan cantik yang cocok menghiasi setiap jenis akuarium.
+							</p>
+							<p>
+								Senin – Jumat: 09.00 - 17.00<br>
+								Sabtu: 10.00 to 14.00<br>
+								Minggu: Closed
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- .entry-content -->
+				</article>
+				</main>
+				<!-- #main -->
+			</div>
+			<!-- #primary -->
+		</div>
+		<!-- #content -->
+	</div>
+	<!-- .container -->
+	<footer id="colophon" class="site-footer">
+	<div class="container">
+		<div class="site-info">
+			<h1 style="font-family: 'Herr Von Muellerhoff';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px;">Sanctuary Aquatic</h1>
+			<a target="blank" href="#">&copy; Sanctuary Aquactics | Ikan Hias Juara, Untuk Aquariummu yang Bergaya!</a>
+		</div>
+	</div>
+	</footer>
+	<a href="#top" class="smoothup" title="Back to top"><span class="genericon genericon-collapse"></span></a>
+</div>
+<!-- #page -->
+<script src='js/jquery.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+<script src='js/validate.js'></script>
+</body>
+</html>
